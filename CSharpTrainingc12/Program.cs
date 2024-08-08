@@ -1,7 +1,6 @@
-﻿// https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-12#alias-any-type
+﻿using System.Diagnostics.CodeAnalysis;
+// https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-12#alias-any-type
 #region alias-and-type
-using System.Diagnostics.CodeAnalysis;
-using System.Runtime.CompilerServices;
 using Point3d = (int X, int Y, int Z);
 
 var point = new Point3d(5, 12, 13);
