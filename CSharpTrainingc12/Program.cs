@@ -1,7 +1,12 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 // https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-12#alias-any-type
 #region alias-and-type
+using NameList = System.Collections.Generic.List<string>;
 using Point3d = (int X, int Y, int Z);
+
+List<string> nameList = new NameList();
+nameList.Add("Can");
+nameList.Add("Ahmet");
 
 var point = new Point3d(5, 12, 13);
 (int x, int y, int z) point2 = new Point3d(6, 8, 10);
